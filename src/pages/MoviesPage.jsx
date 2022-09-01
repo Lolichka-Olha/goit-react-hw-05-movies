@@ -17,8 +17,10 @@ const MoviesPage = () => {
         setLoading(true);
         try {
           const { data } = await searchMovies(search);
+
           setMovies(data.results);
         } catch (error) {
+          console.log(error);
         } finally {
           setLoading(false);
         }
