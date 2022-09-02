@@ -1,7 +1,5 @@
 import Menu from '../Menu/Menu';
 import UserRoutes from './UserRoutes';
-// import { ToastContainer } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 import { Container } from './App.styled';
 
 export const App = () => {
@@ -9,7 +7,6 @@ export const App = () => {
     <Container>
       <Menu />
       <UserRoutes />
-      {/* <ToastContainer position="top-right" /> */}
     </Container>
   );
 };

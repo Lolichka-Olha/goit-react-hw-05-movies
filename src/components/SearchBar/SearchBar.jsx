@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// import { toast } from 'react-toastify';
 import {
   FormContainer,
   StyledForm,
@@ -14,18 +13,6 @@ const SearchBar = ({ onSubmit }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
-    // const searchQuery = e.currentTarget.elements.query.value;
-
-    // if (searchQuery.trim() === '') {
-    //   toast.error('Please enter a search name');
-    //   return;
-    // }
-    // if (searchQuery.length < 3) {
-    //   toast.warn('Search name must be at least 3 characters long');
-    //   return;
-    // }
-
     onSubmit(searchQuery);
     setSearchQuery('');
   };
